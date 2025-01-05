@@ -48,9 +48,23 @@ This allows us to use separate webpack configuration files for different modes, 
 `npm install --save-dev webpack-merge`
 
 
-## Install the ESLint v8.57 package in your project
+## Installing eslint-config-airbnb-base
 
-`npm install --save-dev eslint`
+The package requires eslint and eslint-plugin-import.
+
+
+### Install the correct versions of each package, which are listed by the command:
+
+`npm info "eslint-config-airbnb-base@latest" peerDependencies`
+
+It may be `npm install --save-dev eslint@8.2.0 eslint-plugin-import@2.25.2` Recall to use --save-dev flag
+
+
+### Install eslint-config-airbnb-base
+
+npm install --save-dev eslint-config-airbnb-base
+
+Add `"extends": "airbnb-base"` to your .eslintrc
 
 
 ### Create an .eslintrc JavaScript configuration file
